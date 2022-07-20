@@ -1,5 +1,5 @@
 <?php
-	include_once("bloggerClass.php");
+	include_once("../EmbedPlayer/PlayerClass.php");
 	if(isset($_GET['url'])){
 		$stream = new bloggerStream();
 $stream->loadApi($_GET['url']);
