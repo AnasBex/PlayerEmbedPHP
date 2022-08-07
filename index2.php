@@ -9,9 +9,9 @@ $useragent = "Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML
 //    $return = openssl_decrypt($data, 'aes-256-cbc', 'YOUR_ENCRYPT_KEY', 0, '1234567890123456');
 //    return $return;
 //}
-$decrypted = DecryptData($_GET['q']);
-$v = urldecode($decrypted).'?other_link_parameters..';
-//$v = urldecode($_GET['q']).'?other_link_parameters..';
+//$decrypted = DecryptData($_GET['q']);
+//$v = urldecode($decrypted).'?other_link_parameters..';
+$v = urldecode($_GET['q']).'?other_link_parameters..';
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_VERBOSE, 1);
 curl_setopt($ch, CURLOPT_TIMEOUT, 222222);
