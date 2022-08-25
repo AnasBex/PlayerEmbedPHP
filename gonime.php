@@ -19,6 +19,8 @@ $posterImg = $stream->poster(); // poster image url
 	<video poster="<?php echo $posterImg; ?>" id="player" playsinline controls>
 		<source src="<?php echo $videoLink;?>" type="video/mp4">
 	</video>
+	<h1><?php echo $posterImg; ?></h1>
+	<h1><?php echo $videoLink;?></h1>
 	<!-- Plyr JS -->
 	<script src="https://cdn.plyr.io/3.3.12/plyr.js"></script>
 	<script>const player = new Plyr('#player');</script>
