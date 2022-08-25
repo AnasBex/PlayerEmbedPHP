@@ -27,6 +27,11 @@
 	<video poster="<?php echo $results['image']; ?>" id="player" playsinline controls>
 		<source src="<?php echo $results['file'];?>" type="<?php echo $results['type'];?>">
 	</video>
+	
+	<h1><?php echo $results['image']; ?></h1>
+	<h1><?php echo $results['file'];?></h1>
+	<h5><?php echo $results['type'];?></h5>
+	
 	<!-- Plyr JS -->
 	<script src="https://cdn.plyr.io/3.3.12/plyr.js"></script>
 	<script>const player = new Plyr('#player');</script>
